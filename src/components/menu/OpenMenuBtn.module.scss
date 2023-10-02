@@ -1,0 +1,57 @@
+$lineHeight:5px;
+
+.NavLogoContainer{
+background-color: green;
+width: 10rem;
+height: 10rem;
+
+}
+
+
+.openMenuBtnSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    cursor: pointer;
+
+    .topLine{
+        width: 44px;
+        height: $lineHeight;
+        background-color: red;
+
+    }
+    
+
+    .bottomLine{
+        width: 44px;
+        height: $lineHeight;
+        background-color: rgb(187, 255, 0);
+
+    }
+    .middleLine{
+        width: 44px;
+        height: $lineHeight;
+        background-color: rgb(187, 255, 0);
+
+    }
+
+    &.active{
+        .topLine{
+      
+
+    }
+    
+
+        .bottomLine{
+           
+
+        }
+        .middleLine{
+           opacity: 0;
+
+        }
+    }
+}
+

@@ -1,0 +1,27 @@
+.categoriesContainer {
+  margin-top: 1rem;
+  display: flex;
+  height: 140px; 
+  overflow: auto;
+}
+
+.scrollableContent {
+  display: flex;
+
+}
+::-webkit-scrollbar {
+    display: none;
+    margin: 0.5rem;
+}
+.categoryBox {
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+     img {
+   width: 5rem;
+    height: 4rem;
+    border-radius: 50%;
+  }
+}

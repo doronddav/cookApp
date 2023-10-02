@@ -1,0 +1,15 @@
+.search{
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    align-items: center;
+}
+.searchInput{
+    width: 15rem;
+    height: 2rem;
+    border-radius: 1rem;
+}
+::placeholder {
+   text-align: center; 
+}
+

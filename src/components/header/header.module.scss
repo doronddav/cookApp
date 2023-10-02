@@ -1,0 +1,24 @@
+.header{
+  width: 100%;
+  background-color: #444444 ;
+  display: flex;
+  justify-content: center;
+  // justify-content: space-between;
+  padding: 0 2rem ;
+  // position: fixed;
+  z-index: 10;
+}
+.hideHeader{
+  display: none;
+}
+
+.logo{
+    img{
+
+       height: 6rem;
+
+    }
+}
+.openMenuBtnSection{
+
+}

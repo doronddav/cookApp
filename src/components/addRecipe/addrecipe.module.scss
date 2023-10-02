@@ -1,0 +1,119 @@
+form {
+	background-color: rgb(198 207 213 / 17%);
+}
+.main {
+	margin: 1.5rem;
+	height: 75vh;
+	// border-radius: 1rem;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 20px, rgba(0, 0, 0, 0.4) 0px 6px 6px;
+	margin: 1rem;
+	padding-bottom: 1rem; /* Margin from the footer */
+	max-height: calc(
+		100vh - 2rem
+	); /* Subtract 2rem for the top and bottom margin */
+	overflow-y: auto; /* Enable vertical scrolling if needed */
+	div {
+		margin: 1.5rem 0 1rem 0;
+		text-align: center;
+	}
+}
+.nameAndSelect {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	row-gap: 0.5rem;
+	margin: 1rem 0 1rem 0;
+	justify-content: space-around;
+	.ingInputs {
+		input {
+			margin: 0.5rem 1rem 0 0;
+		}
+	}
+}
+.title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 0.5rem;
+	margin: 1rem 0 1rem 0;
+	.ingInputs {
+		input {
+			margin: 1rem 0.5rem 0 0;
+			width: 70%;
+		}
+		.amountInput {
+			width: 20%;
+		}
+	}
+}
+
+.methodBox {
+	margin-top: 0.2rem;
+	margin-right: 1rem;
+}
+descriptionInput {
+	width: 83%;
+}
+input {
+	border: 1px solid rgb(26, 23, 23);
+	// box-shadow: 1px 2px 2px red;
+	box-shadow: 0px 1px 0px #00d1e3;
+	// border-radius: 3px;
+	border-top: none;
+	border-left: none;
+	height: 2rem;
+	border-radius: 0.4rem;
+}
+.selectInput {
+	padding: 0.5rem;
+	font-size: 0.8rem; /* Adjust the font size as needed */
+	border-radius: 4px; /* Add border-radius for rounded corners */
+	border: 1px solid rgb(26, 23, 23);
+	box-shadow: 0px 1px 0px #00d1e3;
+	border-top: none;
+	border-left: none;
+	height: 2rem;
+}
+button {
+	margin: 20px;
+}
+textarea {
+	border: 1px solid rgb(26, 23, 23);
+	box-shadow: 0px 1px 0px #00d1e3;
+	// box-shadow: 1px 2px 2px red;
+	border-radius: 0.4rem;
+
+	// border-radius: 3px;
+	border-top: none;
+	border-left: none;
+	width: 90%;
+}
+
+.addImg {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+.addBtn {
+	text-align: center;
+}
+.btn {
+	margin-top: 0.7rem;
+	display: inline-block;
+	outline: none;
+	cursor: pointer;
+	font-weight: 500;
+	border: 1px solid transparent;
+	border-radius: 2px;
+	height: 36px;
+	line-height: 34px;
+	font-size: 14px;
+	color: #ffffff;
+	transition: background-color 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
+	padding: 0 18px;
+	:hover {
+		color: #ffffff;
+		background-color: #006570;
+	}
+}

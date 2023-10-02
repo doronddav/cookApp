@@ -1,0 +1,118 @@
+[{
+"id":1,
+  "category":"מרק",
+  "Name": "המרק של תמר",
+  "img": "https://my-little-kitchen.com/wp-content/uploads/2013/12/rich_vegetables_soup.jpg",
+  "Description": "Combine a few key Christmas flavours here to make a pie that both children and adults will adore",
+  "Author": "Mary Cadogan",
+  "Ingredients": [
+    ["2", "חיבילות שימורי עגבניות"],
+    ["2", "בצלים"],
+    ["1", " ראש שום"],
+    ["1", "כפית אבקת שום"],
+    ["1", "כפית אבקת פפריקה"],
+    ["1", "כפית מלח"],
+    ["0.5", "כפית סוכר"],
+    ["2", "כוסות מים"]
+  ],
+  "Method": ["לחתוך את הבצל","לטגן את הבצל עם השום","להוסיף רסק","להוסיף מים","לחמם עד רתיחה"
+  ]
+},
+{
+"id":2,
+  "category":"pizza",
+  "Name": "  פיצה",
+  "img": "https://my-little-kitchen.com/wp-content/uploads/2013/12/rich_vegetables_soup.jpg",
+  "Description": "Combine a few key Christmas flavours here to make a pie that both children and adults will adore",
+  "Author": "Mary Cadogan",
+  "Ingredients": [
+    ["2", "חיבילות שימורי עגבניות"],
+    ["2", "בצלים"],
+    ["1", " ראש שום"],
+    ["1", "כפית אבקת שום"],
+    ["1", "כפית אבקת פפריקה"],
+    ["1", "כפית מלח"],
+    ["0.5", "כפית סוכר"],
+    ["2", "כוסות מים"]
+  ],
+  "Method": ["לחתוך את הבצל","לטגן את הבצל עם השום","להוסיף רסק","להוסיף מים","לחמם עד רתיחה"
+  ]
+},
+{
+"id":3,
+  "category":"pizza",
+  "Name": "פסטה",
+  "img": "https://my-little-kitchen.com/wp-content/uploads/2013/12/rich_vegetables_soup.jpg",
+  "Description": "Combine a few key Christmas flavours here to make a pie that both children and adults will adore",
+  "Author": "Mary Cadogan",
+  "Ingredients": [
+    ["2", "חיבילות שימורי עגבניות"],
+    ["2", "בצלים"],
+    ["1", " ראש שום"],
+    ["1", "כפית אבקת שום"],
+    ["1", "כפית אבקת פפריקה"],
+    ["1", "כפית מלח"],
+    ["0.5", "כפית סוכר"],
+    ["2", "כוסות מים"]
+  ],
+  "Method": ["לחתוך את הבצל","לטגן את הבצל עם השום","להוסיף רסק","להוסיף מים","לחמם עד רתיחה"
+  ]
+},{
+"id":4,
+  "category":"pizza",
+  "Name": "בולונז",
+  "img": "https://my-little-kitchen.com/wp-content/uploads/2013/12/rich_vegetables_soup.jpg",
+  "Description": "Combine a few key Christmas flavours here to make a pie that both children and adults will adore",
+  "Author": "Mary Cadogan",
+  "Ingredients": [
+    ["2", "חיבילות שימורי עגבניות"],
+    ["2", "בצלים"],
+    ["1", " ראש שום"],
+    ["1", "כפית אבקת שום"],
+    ["1", "כפית אבקת פפריקה"],
+    ["1", "כפית מלח"],
+    ["0.5", "כפית סוכר"],
+    ["2", "כוסות מים"]
+  ],
+  "Method": ["לחתוך את הבצל","לטגן את הבצל עם השום","להוסיף רסק","להוסיף מים","לחמם עד רתיחה"
+  ]
+},{
+"id":5,
+  "category":"pizza",
+  "Name": "עוגה ",
+  "img": "https://my-little-kitchen.com/wp-content/uploads/2013/12/rich_vegetables_soup.jpg",
+  "Description": "Combine a few key Christmas flavours here to make a pie that both children and adults will adore",
+  "Author": "Mary Cadogan",
+  "Ingredients": [
+    ["2", "חיבילות שימורי עגבניות"],
+    ["2", "בצלים"],
+    ["1", " ראש שום"],
+    ["1", "כפית אבקת שום"],
+    ["1", "כפית אבקת פפריקה"],
+    ["1", "כפית מלח"],
+    ["0.5", "כפית סוכר"],
+    ["2", "כוסות מים"]
+  ],
+  "Method": ["לחתוך את הבצל","לטגן את הבצל עם השום","להוסיף רסק","להוסיף מים","לחמם עד רתיחה"
+  ]
+},{
+"id":6,
+  "category":"pizza",
+  "Name": "סלט ",
+  "img": "https://my-little-kitchen.com/wp-content/uploads/2013/12/rich_vegetables_soup.jpg",
+  "Description": "Combine a few key Christmas flavours here to make a pie that both children and adults will adore",
+  "Author": "Mary Cadogan",
+  "Ingredients": [
+    ["2", "חיבילות שימורי עגבניות"],
+    ["2", "בצלים"],
+    ["1", " ראש שום"],
+    ["1", "כפית אבקת שום"],
+    ["1", "כפית אבקת פפריקה"],
+    ["1", "כפית מלח"],
+    ["0.5", "כפית סוכר"],
+    ["2", "כוסות מים"]
+  ],
+  "Method": ["לחתוך את הבצל","לטגן את הבצל עם השום","להוסיף רסק","להוסיף מים","לחמם עד רתיחה"
+  ]
+}
+]

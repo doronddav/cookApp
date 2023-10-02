@@ -1,0 +1,18 @@
+.mainContainer{
+       background-color: #65d4ff;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 0 2rem;
+    z-index: 10;
+    position: fixed;
+    bottom: 0;
+    border-radius: 1rem 1rem 0rem 0rem;
+    width: 100%;
+
+    img{
+        width: 3rem;
+        height: 3rem;
+        margin: 0.3rem;
+    }
+}

@@ -1,0 +1,39 @@
+
+.ActiveMainManu,.CloseMainManu{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: blue;
+    margin: 0;
+    padding: 0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    transition: 400ms;
+    position: relative;
+    top: 5rem;
+
+   
+    li{
+        margin-top: 1rem;
+    
+        color:white;
+        height: 2rem;
+        
+    }
+}
+
+.CloseMainManu{
+    transform: translateY(-100%);
+}
+
+.topLine{
+    width: 2px;
+    height: 0.3px;
+}
+.bottomLine{
+      width: 2px;
+    height: 0.3px;
+}

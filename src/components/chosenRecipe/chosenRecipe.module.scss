@@ -1,0 +1,33 @@
+.mainContainer {
+	display: flex;
+	// border:1px solid black;
+	flex-direction: column;
+	margin: 1rem;
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+		rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+.title {
+	text-align: center;
+}
+.description {
+	text-align: center;
+}
+.ingList {
+	display: flex;
+	flex-direction: row-reverse;
+	margin: 5px 0 5px 0;
+	border-bottom: 1px solid black;
+	justify-content: flex-end;
+	span:last-child {
+		margin-right: 2rem;
+	}
+	span {
+		margin: 0.3rem 1rem;
+	}
+}
+
+.ingredients {
+	p {
+		font-size: 1.1rem;
+	}
+}
