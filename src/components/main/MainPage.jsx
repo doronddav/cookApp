@@ -4,7 +4,7 @@ import Search from "../searchComp/Search";
 import classes from "./main.module.scss";
 import Categories from "../categories/Categories";
 import categoriesData from "../../static/categories.json";
-import RecipeBox from "../recipeBox/recipeBox";
+import RecipeBox from "../recipeBox/recipeBox.jsx";
 import { useState } from "react";
 
 const Main = ({
