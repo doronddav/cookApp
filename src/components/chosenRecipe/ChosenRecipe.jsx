@@ -5,7 +5,7 @@ import ShareBtn from "../shareBtn/ShareBtn";
 import PopUp from "../popUp/PopUp";
 import EditIcon from "@mui/icons-material/Edit";
 import AddRecipe from "../addRecipe/AddRecipe";
-import EditRecipe from "../editRecipe/editRecipe";
+import EditRecipe from "../editRecipe/EditRecipe";
 import CloseIcon from '@mui/icons-material/Close';
 const ChosenRecipe = ({ recipes, openPopup, closePopup, isPopupVisible,recipeToEdit
 	,setRecipeToEdit }) => {
