@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import classes from  "./App.module.scss";
-import Main from "./components/main/Main.jsx";
+import Main from "./components/main/MainPage.jsx";
 import Header from "./components/header/Header.jsx";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ChosenRecipe from "./components/chosenRecipe/ChosenRecipe";

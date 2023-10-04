@@ -2,7 +2,7 @@ import Header from "../header/Header"; // Use default import, not named import
 import Menu from "../menu/Menu";
 import Search from "../searchComp/Search";
 import classes from "./main.module.scss";
-import Categories from "../categories/categories.jsx";
+import Categories from "../categories/Categories";
 import categoriesData from "../../static/categories.json";
 import RecipeBox from "../recipeBox/recipeBox";
 import { useState } from "react";
