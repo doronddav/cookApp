@@ -47,7 +47,7 @@ const RecipeBox = ({ recipes, filterdRecipes }) => {
 						to={`/recipe/${recipe.id}`}
 						className={classes.recipeBox}
 						key={index}>
-						<div>
+						<div className={classes.boxContent}>
 							<h3>{recipe.recipeName}</h3>
 							<p>{recipe.description}</p>
 						</div>

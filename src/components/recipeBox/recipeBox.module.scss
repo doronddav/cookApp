@@ -13,12 +13,15 @@
 .recipeBox:last-child{
     margin-bottom: 1rem;
 }
-img{
-    width: 11rem;
-    height: 8rem;
+.mainImg{
+    width: 7rem;
+    height: 6rem;
     border-radius: 1rem;
 }
-
+.boxContent{
+    max-width: 12rem;
+    word-wrap: break-word;
+}
 .allRecipesContainer{
     box-sizing: border-box;
     
