@@ -1,0 +1,14 @@
+{
+    "name": "T.D.N coockApp",
+    "short_name": "T.D.N",
+    "description": "cooking App",
+    "start_url": "/",
+    "icons": [
+      {
+        "src": "./src/assets/tdn-logo.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ]
+  }
+  
