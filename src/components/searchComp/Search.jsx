@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import classes from "./search.module.scss";
-import SearchPopUp from "./searchPopup";
 const Search = ({ recipes, filterdRecipes, setFilterdRecipes, searchFunc }) => {
 	return (
 		<div className={classes.search}>
