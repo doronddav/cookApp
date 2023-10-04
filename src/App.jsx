@@ -16,6 +16,7 @@ function App() {
 	const [filterdRecipes, setFilterdRecipes] = useState([]);
 	const [recipes, setRecipes] = useState([]);
 	const [isPopupVisible, setPopupVisible] = useState(false);
+	const [recipeToEdit,setRecipeToEdit]=useState({})
 
 	useEffect(() => {
 		getAllRecipes();
@@ -84,6 +85,9 @@ function App() {
 								openPopup={openPopup}
 								recipes={recipes}
 								isPopupVisible={isPopupVisible}
+								recipeToEdit={recipeToEdit}
+								setRecipeToEdit={setRecipeToEdit}
+
 							/>
 						}
 					/>
@@ -91,9 +95,12 @@ function App() {
 						path="/add"
 						element={
 							<AddRecipe
+							
 								openPopup={openPopup}
 								closePopup={closePopup}
 								recipes={recipes}
+								recipeToEdit={recipeToEdit}
+								setRecipeToEdit={setRecipeToEdit}
 							/>
 						}
 					/>

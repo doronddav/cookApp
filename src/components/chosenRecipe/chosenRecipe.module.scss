@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Permanent+Marker&display=swap');
 .mainContainer {
 	display: flex;
 	// border:1px solid black;
@@ -5,12 +6,24 @@
 	margin: 1rem;
 	box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
 		rgba(0, 0, 0, 0.05) 0px 5px 10px;
+
+		font-family: 'Permanent Marker', cursive;
+	p{
+		margin-right: 1rem;
+	}	
 }
 .title {
 	text-align: center;
+	font-size: 1.5rem;
+}
+.topButtons{
+	display: flex;
+    gap: 1rem;
+    margin: 1.5rem 1.5rem 0 0;
 }
 .description {
 	text-align: center;
+	margin-top: -0.6rem;
 }
 .ingList {
 	display: flex;
@@ -22,7 +35,7 @@
 		margin-right: 2rem;
 	}
 	span {
-		margin: 0.3rem 1rem;
+		margin-right: 2rem;
 	}
 }
 
@@ -30,4 +43,79 @@
 	p {
 		font-size: 1.1rem;
 	}
+}
+li{
+	max-width: 19rem;
+    word-wrap: break-word;
+	margin :0.5rem;
+}
+//style on update
+
+
+.mainContainerUpdate {
+	
+	display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    box-shadow: rgb(31 218 0 / 62%) 0px 15px 25px, rgb(244 12 86 / 56%) 0px 5px 10px;
+	input{
+		border: none;
+		background: none;
+		box-shadow: none;
+		background: none;
+		:focus-visible{
+			outline: none;
+		} 
+		padding: 1rem;
+
+		
+	}
+	.titleUpdate{
+		text-align: center !important;
+	}
+	textarea{
+		margin: 0.5rem;
+		border: none;
+		background: none;
+		box-shadow: none;
+		background: none;
+		:focus-visible{
+			outline: none;
+		} 
+		
+		
+	}
+	.closeBtn{
+		margin :1rem;
+		
+	}
+}
+.addBtn {
+	text-align: center;
+}
+.btn {
+	margin-top: 0.7rem;
+	display: inline-block;
+	// outline: none;
+	cursor: pointer;
+	font-weight: 500;
+	border: 1px solid #1ebc38;
+	border-radius: 2px;
+	height: 36px;
+	line-height: 34px;
+	font-size: 14px;
+	color: #1c1717;
+	transition: background-color 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
+	padding: 0 18px;
+	:hover {
+		color: #ffffff;
+		background-color: #006570;
+		
+	}
+}
+
+.copyPopUp{
+	position: absolute;
+    top: 10.7rem;
+    margin: 0.2rem;
 }
