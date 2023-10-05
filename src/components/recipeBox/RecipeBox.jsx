@@ -41,7 +41,7 @@ const RecipeBox = ({ recipes, filterdRecipes }) => {
 							<img
 								className={classes.mainImg}
 								src={imgToDisplay}
-								// src={findImgByCategory("pizza")}
+								
 								alt={recipe.Name}
 							/>
 							
