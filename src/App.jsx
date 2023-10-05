@@ -36,7 +36,7 @@ console.log(window.innerWidth);
 			headers: { "Content-Type": "application/json" },
 		};
 		try {
-			const res = await fetch("http://localhost:3000/recipes", requestOptions);
+			const res = await fetch("https://cook-server-e5on.onrender.com/recipes", requestOptions);
 			const resJson = await res.json();
 			setRecipes(resJson.data.recipes);
 		} catch (err) {

@@ -8,11 +8,7 @@ const ShareBtn = ({ openPopup, closePopup, isPopupVisible }) => {
 
 		navigator.clipboard.writeText(url);
 
-		// setTimeout(() => {
-		// 	console.log("in");
-		// 	closePopup();
-		// 	console.log(isPopupVisible);
-		// }, 3000);
+		
 	};
 
 	return (

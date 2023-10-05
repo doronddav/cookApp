@@ -66,7 +66,7 @@ function AddRecipe({ recipes, isPopupVisible }) {
 		try {
 			console.log(updatedRecipeToAdd);
 			const response = await fetch(
-				"http://localhost:3000/recipes",
+				"https://cook-server-e5on.onrender.com/recipes",
 				requestMethods,
 			);
 			navigate("/");

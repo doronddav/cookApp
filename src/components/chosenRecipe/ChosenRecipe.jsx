@@ -13,7 +13,7 @@ const ChosenRecipe = ({ recipes, openPopup, closePopup, isPopupVisible,recipeToE
 	const i = +index["recipeId"] - 1;
 	const idToFetch = index.recipeId;
 	const [tempRecipe, setTempRecipe] = useState(null);
-	const [chnageRecipe,SetCHnageRecipe]= useState(false)
+	const [chnageRecipe,SetChnageRecipe]= useState(false)
 	const [recipeToChnage,setRecipeToChange]=useState(null)
 	let recipyToDisplay = tempRecipe ? tempRecipe[0] : recipes[i];
 
@@ -42,7 +42,7 @@ const navigate = useNavigate();
 	}, [isPopupVisible, closePopup]);
 
 	function goToEditRecipe(){
-		SetCHnageRecipe(true)
+		SetChnageRecipe(true)
 		// navigate("/add")
 
 	}
@@ -54,7 +54,7 @@ const navigate = useNavigate();
 		};
 		try {
 			const res = await fetch(
-				`http://localhost:3000/recipes/getRecipeById/${idToFetch}`,
+				`https://cook-server-e5on.onrender.com/recipes/getRecipeById/${idToFetch}`,
 				requestOptions,
 			);
 			const resJson = await res.json();
@@ -80,11 +80,11 @@ const navigate = useNavigate();
 		try {
 			console.log(recipeToChnage);
 			const response = await fetch(
-				`http://localhost:3000/recipes/${idToFetch}`,
+				`https://cook-server-e5on.onrender.com/recipes/${idToFetch}`,
 				requestMethods,
 			);
-			// navigate("/");
-			SetCHnageRecipe(false)
+			
+			SetChnageRecipe(false)
 		} catch (err) {
 			console.log(err.response.data.result);
 			alert(err.response.data.result);
@@ -141,7 +141,7 @@ const navigate = useNavigate();
 
 		<form onSubmit={handleUpdateRecipe} className={classes.mainContainerUpdate}>
 			{isPopupVisible && <PopUp className={classes.copyPopUp}>{popuptext()}</PopUp>}
-			<CloseIcon className={classes.closeBtn} onClick={()=>SetCHnageRecipe(false)}/>
+			<CloseIcon className={classes.closeBtn} onClick={()=>SetChnageRecipe(false)}/>
 			
 
 
@@ -190,7 +190,7 @@ const navigate = useNavigate();
 				<p className={classes.titleUpdate}>הוראות הכונה</p>
 				<ol>
 					{recipeToChnage?.method.map((step, i) => (
-						// <li key={i}>{step}</li>
+				
 						<textarea
 							rows="1"
 							cols="50"

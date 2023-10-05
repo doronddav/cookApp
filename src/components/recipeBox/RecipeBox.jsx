@@ -9,13 +9,10 @@ const RecipeBox = ({ recipes, filterdRecipes }) => {
 	let recipeToDisplay = filterdRecipes.length > 0 ? filterdRecipes : recipes;
 
 	function getImageForCategory(recipeCategory, Categories) {
-		// console.log(999, Categories);
 		let json_categories = Categories.categories;
 
 		for (let i = 0; i < json_categories.length; i++) {
-			// console.log(i, recipeCategory);
-			// console.log("json_categories[i]:", json_categories[i].category);
-			// console.log("recipeCategory:", recipeCategory);
+		
 			if (json_categories[i].category === recipeCategory) {
 				console.log(json_categories[i].image);
 				return json_categories[i].image;
@@ -25,18 +22,7 @@ const RecipeBox = ({ recipes, filterdRecipes }) => {
 		return imgNotFound;
 	}
 
-	// const findImgByCategory = (categoryName) => {
-	// 	const category = jsonCategories.find(
-	// 		(cat) => cat.category === categoryName,
-	// 	);
-	// 	if (category) {
-	// 		// console.log(category);
-	// 		// console.log(444, category);
-	// 		return category.image;
-	// 	} else {
-	// 		return null;
-	// 	}
-	// };
+	
 
 	return (
 		<div className={classes.allRecipesContainer}>
@@ -58,8 +44,7 @@ const RecipeBox = ({ recipes, filterdRecipes }) => {
 								// src={findImgByCategory("pizza")}
 								alt={recipe.Name}
 							/>
-							{/* {console.log(findImgByCategory(recipe))} */}
-							{/* {console.log(recipe.category)} */}
+							
 						</div>
 					</Link>
 				);
