@@ -2,10 +2,13 @@ form {
 	background-color: rgb(198 207 213 / 17%);
 }
 .main {
+	margin-bottom: 4rem;
 	margin: 1.5rem;
 	height: 75vh;
 	// border-radius: 1rem;
-	box-shadow: rgb(31 218 0 / 62%) 0px 15px 25px, rgb(244 12 86 / 56%) 0px 5px 10px;	margin: 1rem;
+	box-shadow: rgb(31 218 0 / 62%) 0px 15px 25px,
+		rgb(244 12 86 / 56%) 0px 5px 10px;
+	margin: 1rem;
 	padding-bottom: 1rem; /* Margin from the footer */
 	max-height: calc(
 		100vh - 2rem
