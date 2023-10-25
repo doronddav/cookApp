@@ -5,21 +5,19 @@ import plusIcon from "../../static/logos/plus-svgrepo-com.svg";
 import classes from "./addrecipe.module.scss";
 
 function AddRecipe({ recipes, isPopupVisible }) {
-
-		const [recipeToAdd, setRecipeToAdd] = useState({
-			id: "",
-			recipeName: "",
-			img: "",
-			description: "",
-			author: "",
-			ingredients: [{}],
-			method: [],
-			categories: "",
-		});
-	const INITIAL_INPUT_COUNT =  2; // Initial count of inputs
+	const [recipeToAdd, setRecipeToAdd] = useState({
+		id: "",
+		recipeName: "",
+		img: "",
+		description: "",
+		author: "",
+		ingredients: [{}],
+		method: [],
+		categories: "",
+	});
+	const INITIAL_INPUT_COUNT = 2; // Initial count of inputs
 	const [inputSets, setInputSets] = useState(
-		Array.from({ length:
-			 INITIAL_INPUT_COUNT }, () => ({
+		Array.from({ length: INITIAL_INPUT_COUNT }, () => ({
 			amount: "",
 			ing: "",
 		})),
@@ -37,10 +35,6 @@ function AddRecipe({ recipes, isPopupVisible }) {
 		setMethodInputs([...methodInputs, ""]);
 	};
 
-	
-	console.log('recipeToAdd',recipeToAdd);
-
-	
 	const addRecipeToDB = async (e) => {
 		e.preventDefault();
 		// setSubmitForm(true);
@@ -75,7 +69,6 @@ function AddRecipe({ recipes, isPopupVisible }) {
 			alert(err.response.data.result);
 		}
 	};
-
 
 	const editRecipe = async (e) => {
 		e.preventDefault();
@@ -131,21 +124,20 @@ function AddRecipe({ recipes, isPopupVisible }) {
 					id="name"
 					name="name"
 					onChange={handleAddName}
-					value={recipeToAdd.recipeName!=""?recipeToAdd.recipeName:""}
-					placeholder={ ":שם המנה"}
-					/>
+					value={recipeToAdd.recipeName != "" ? recipeToAdd.recipeName : ""}
+					placeholder={":שם המנה"}
+				/>
 
 				<select
-				onChange={handleAddCategory}
+					onChange={handleAddCategory}
 					className={classes.selectInput}
 					name="categories"
-					id="categories"
-					>
+					id="categories">
 					<option value="pizza">פיצה</option>
 					<option value="pasta">פסטה</option>
 					<option value="bread">בצק</option>
 					<option value="deserts">קינוח</option>
-					<option value="burger">המבורגר</option>
+					<option value="meat">בשר</option>
 					<option value="soup">מרק</option>
 				</select>
 			</div>
@@ -156,10 +148,8 @@ function AddRecipe({ recipes, isPopupVisible }) {
 					id="description"
 					name="description"
 					onChange={handleAddDescription}
-					value={recipeToAdd.description
-						!=""?recipeToAdd.description
-						:""}
-					placeholder={ ":תיאור"}
+					value={recipeToAdd.description != "" ? recipeToAdd.description : ""}
+					placeholder={":תיאור"}
 				/>
 			</div>
 			<div className={classes.title}>
@@ -171,31 +161,20 @@ function AddRecipe({ recipes, isPopupVisible }) {
 							id={`amount-${index}`}
 							name={`amount-${index}`}
 							placeholder={"כמות"}
-
-							value={
-							 inputSets.amount
-							  }
+							value={inputSets.amount}
 							onChange={(e) => {
-							
 								const updatedInputSets = [...inputSets];
 								updatedInputSets[index].amount = e.target.value;
 								setInputSets(updatedInputSets);
-						
 							}}
 						/>
 						<input
 							type="text"
 							id={`ing-${index}`}
 							name={`ing-${index}`}
-						placeholder={"מרכיב"}
-
-
-						value={
-						 inputSet.ing
-						  }
-
-									onChange={(e) => {
-							
+							placeholder={"מרכיב"}
+							value={inputSet.ing}
+							onChange={(e) => {
 								const updatedInputSets = [...inputSets];
 								updatedInputSets[index].ing = e.target.value;
 								setInputSets(updatedInputSets);
@@ -218,13 +197,13 @@ function AddRecipe({ recipes, isPopupVisible }) {
 							cols="50"
 							// value={
 							//  methodInputs
-							//   }			
-							  				onChange={(e) => {
+							//   }
+							onChange={(e) => {
 								const updatedInputs = [...methodInputs];
 								updatedInputs[index] = e.target.value;
 								setMethodInputs(updatedInputs);
 							}}
-							 placeholder={"שלבי הכנה"}
+							placeholder={"שלבי הכנה"}
 						/>
 					</div>
 				))}

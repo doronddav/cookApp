@@ -14,7 +14,7 @@ exports.findImg = (recipy) => {
 	if (recipy.category === "deserts") {
 		image = category[3].image;
 	}
-	if (recipy.category === "burger") {
+	if (recipy.category === "meat") {
 		image = category[4].image;
 	} else {
 		image = Image_not_found;

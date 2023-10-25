@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Permanent+Marker&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Permanent+Marker&display=swap");
 .mainContainer {
 	display: flex;
 	// border:1px solid black;
@@ -7,11 +7,11 @@
 	box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
 		rgba(0, 0, 0, 0.05) 0px 5px 10px;
 
-		font-family: 'Permanent Marker', cursive;
-		margin-bottom: 5rem;
-	p{
+	font-family: "Permanent Marker", cursive;
+	margin-bottom: 5rem;
+	p {
 		margin-right: 1rem;
-	}	
+	}
 	word-wrap: break-word;
 }
 .title {
@@ -19,10 +19,10 @@
 	font-size: 1.5rem;
 	margin: 0 0.4rem;
 }
-.topButtons{
+.topButtons {
 	display: flex;
-    gap: 1rem;
-    margin: 1.5rem 1.5rem 0 0;
+	gap: 1rem;
+	margin: 1.5rem 1.5rem 0 0;
 }
 .description {
 	text-align: center;
@@ -47,50 +47,45 @@
 		font-size: 1.1rem;
 	}
 }
-li{
+li {
 	max-width: 19rem;
-    word-wrap: break-word;
-	margin :0.5rem;
+	word-wrap: break-word;
+	margin: 0.5rem;
 }
 //style on update
 
-
 .mainContainerUpdate {
-	
 	display: flex;
-    flex-direction: column;
-    margin: 1rem;
-    box-shadow: rgb(31 218 0 / 62%) 0px 15px 25px, rgb(244 12 86 / 56%) 0px 5px 10px;
-	input{
+	flex-direction: column;
+	margin: 1rem;
+	margin-bottom: 6rem;
+	box-shadow: rgb(31 218 0 / 62%) 0px 15px 25px,
+		rgb(244 12 86 / 56%) 0px 5px 10px;
+	input {
 		border: none;
 		background: none;
 		box-shadow: none;
 		background: none;
-		:focus-visible{
+		:focus-visible {
 			outline: none;
-		} 
+		}
 		padding: 1rem;
-
-		
 	}
-	.titleUpdate{
+	.titleUpdate {
 		text-align: center !important;
 	}
-	textarea{
+	textarea {
 		margin: 0.5rem;
 		border: none;
 		background: none;
 		box-shadow: none;
 		background: none;
-		:focus-visible{
+		:focus-visible {
 			outline: none;
-		} 
-		
-		
+		}
 	}
-	.closeBtn{
-		margin :1rem;
-		
+	.closeBtn {
+		margin: 1rem;
 	}
 }
 .addBtn {
@@ -113,13 +108,11 @@ li{
 	:hover {
 		color: #ffffff;
 		background-color: #006570;
-		
 	}
 }
 
-.copyPopUp{
+.copyPopUp {
 	position: absolute;
-    top: 10.7rem;
-    margin: 0.2rem;
+	top: 10.7rem;
+	margin: 0.2rem;
 }
-
