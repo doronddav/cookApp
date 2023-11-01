@@ -10,7 +10,6 @@ import mockrecipes from "./static/recipes.json";
 import Navigation from "./components/footerNavigation/Navigation";
 import AddRecipe from "./components/addRecipe/AddRecipe";
 import phoneImg from "./assets/phone.jpg";
-import { ThreeCircles } from "react-loader-spinner";
 import { height } from "@mui/system";
 
 function App() {
