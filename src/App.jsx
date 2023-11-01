@@ -72,39 +72,18 @@ function App() {
 						<Route
 							path="/"
 							element={
-								recipes.length > 0 ? (
-									<Main
-										recipes={recipes}
-										setChosenId={setChosenId}
-										chosenId={chosenId}
-										displaySearchInput={displaySearchInput}
-										setDisplaySearchInput={setDisplaySearchInput}
-										filterdRecipes={filterdRecipes}
-										setFilterdRecipes={setFilterdRecipes}
-										searchFunc={searchFunc}
-										openPopup={openPopup}
-										closePopup={closePopup}
-									/>
-								) : (
-									<div className={classes.loader}>
-										<ThreeCircles
-											height="100"
-											width="100"
-											color="#4fa94d"
-											wrapperStyle={{
-												height: " 27rem",
-												display: "flex",
-												"align-items": "center",
-											}}
-											wrapperClass="classes.loader"
-											visible={true}
-											ariaLabel="three-circles-rotating"
-											outerCircleColor="aqua"
-											innerCircleColor="LightGray"
-											middleCircleColor="DodgerBlue"
-										/>
-									</div>
-								)
+								<Main
+									recipes={recipes}
+									setChosenId={setChosenId}
+									chosenId={chosenId}
+									displaySearchInput={displaySearchInput}
+									setDisplaySearchInput={setDisplaySearchInput}
+									filterdRecipes={filterdRecipes}
+									setFilterdRecipes={setFilterdRecipes}
+									searchFunc={searchFunc}
+									openPopup={openPopup}
+									closePopup={closePopup}
+								/>
 							}
 						/>
 						<Route
