@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
-import classes from  "./App.module.scss";
+import classes from "./App.module.scss";
 import Main from "./components/main/MainPage.jsx";
 import Header from "./components/header/Header.jsx";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -9,7 +9,10 @@ import ChosenRecipe from "./components/chosenRecipe/ChosenRecipe";
 import mockrecipes from "./static/recipes.json";
 import Navigation from "./components/footerNavigation/Navigation";
 import AddRecipe from "./components/addRecipe/AddRecipe";
-import phoneImg from './assets/phone.jpg'
+import phoneImg from "./assets/phone.jpg";
+import { ThreeCircles } from "react-loader-spinner";
+import { height } from "@mui/system";
+
 function App() {
 	const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 	const [chosenId, setChosenId] = useState();
@@ -17,8 +20,9 @@ function App() {
 	const [filterdRecipes, setFilterdRecipes] = useState([]);
 	const [recipes, setRecipes] = useState([]);
 	const [isPopupVisible, setPopupVisible] = useState(false);
-	const [recipeToEdit,setRecipeToEdit]=useState({})
-console.log(window.innerWidth);
+	const [recipeToEdit, setRecipeToEdit] = useState({});
+
+	console.log(window.innerWidth);
 	useEffect(() => {
 		getAllRecipes();
 	}, []);
@@ -36,7 +40,10 @@ console.log(window.innerWidth);
 			headers: { "Content-Type": "application/json" },
 		};
 		try {
-			const res = await fetch("https://cook-server-e5on.onrender.com/recipes", requestOptions);
+			const res = await fetch(
+				"https://cook-server-e5on.onrender.com/recipes",
+				requestOptions,
+			);
 			const resJson = await res.json();
 			setRecipes(resJson.data.recipes);
 		} catch (err) {
@@ -58,76 +65,95 @@ console.log(window.innerWidth);
 
 	return (
 		<>
-		{isMobile ?(
-			<BrowserRouter>
-			<Header />
-			<Routes>
-			<Route
-			path="/"
-			element={
-				<Main
-				recipes={recipes}
-				setChosenId={setChosenId}
-				chosenId={chosenId}
-				displaySearchInput={displaySearchInput}
-				setDisplaySearchInput={setDisplaySearchInput}
-				filterdRecipes={filterdRecipes}
-				setFilterdRecipes={setFilterdRecipes}
-				searchFunc={searchFunc}
-				openPopup={openPopup}
-				closePopup={closePopup}
-				/>
-			}
-			/>
-			<Route
-			path="/recipe/:recipeId"
-			element={
-				<ChosenRecipe
-				closePopup={closePopup}
-				openPopup={openPopup}
-				recipes={recipes}
-				isPopupVisible={isPopupVisible}
-				recipeToEdit={recipeToEdit}
-				setRecipeToEdit={setRecipeToEdit}
-				
-				/>
-			}
-			/>
-			<Route
-			path="/add"
-			element={
-				<AddRecipe
-				
-				openPopup={openPopup}
-				closePopup={closePopup}
-				recipes={recipes}
-				recipeToEdit={recipeToEdit}
-				setRecipeToEdit={setRecipeToEdit}
-				/>
-			}
-			/>
-			</Routes>
-			<Navigation
-			displaySearchInput={displaySearchInput}
-			setDisplaySearchInput={setDisplaySearchInput}
-			setFilterdRecipes={setFilterdRecipes}
-			/>
-			</BrowserRouter>
+			{isMobile ? (
+				<BrowserRouter>
+					<Header />
+					<Routes>
+						<Route
+							path="/"
+							element={
+								recipes.length > 0 ? (
+									<Main
+										recipes={recipes}
+										setChosenId={setChosenId}
+										chosenId={chosenId}
+										displaySearchInput={displaySearchInput}
+										setDisplaySearchInput={setDisplaySearchInput}
+										filterdRecipes={filterdRecipes}
+										setFilterdRecipes={setFilterdRecipes}
+										searchFunc={searchFunc}
+										openPopup={openPopup}
+										closePopup={closePopup}
+									/>
+								) : (
+									<div className={classes.loader}>
+										<ThreeCircles
+											height="100"
+											width="100"
+											color="#4fa94d"
+											wrapperStyle={{
+												height: " 27rem",
+												display: "flex",
+												"align-items": "center",
+											}}
+											wrapperClass="classes.loader"
+											visible={true}
+											ariaLabel="three-circles-rotating"
+											outerCircleColor="aqua"
+											innerCircleColor="LightGray"
+											middleCircleColor="DodgerBlue"
+										/>
+									</div>
+								)
+							}
+						/>
+						<Route
+							path="/recipe/:recipeId"
+							element={
+								<ChosenRecipe
+									closePopup={closePopup}
+									openPopup={openPopup}
+									recipes={recipes}
+									isPopupVisible={isPopupVisible}
+									recipeToEdit={recipeToEdit}
+									setRecipeToEdit={setRecipeToEdit}
+								/>
+							}
+						/>
+						<Route
+							path="/add"
+							element={
+								<AddRecipe
+									openPopup={openPopup}
+									closePopup={closePopup}
+									recipes={recipes}
+									recipeToEdit={recipeToEdit}
+									setRecipeToEdit={setRecipeToEdit}
+								/>
+							}
+						/>
+					</Routes>
+					<Navigation
+						displaySearchInput={displaySearchInput}
+						setDisplaySearchInput={setDisplaySearchInput}
+						setFilterdRecipes={setFilterdRecipes}
+					/>
+				</BrowserRouter>
+			) : (
+				<div className={classes.NotForPhone}>
+					<h1 className={classes.OnlyPhoneText}>
+						This App Avilable Only On Phone
+					</h1>
 
-		):(
-
-			
-			
-			<div className={classes.NotForPhone}>
-			<h1 className={classes.OnlyPhoneText}>This App Avilable Only On Phone</h1>
-			
-			<img  className={classes.phonImg} src={phoneImg} alt="phone img" />
-			</div>
-			
+					<img
+						className={classes.phonImg}
+						src={phoneImg}
+						alt="phone img"
+					/>
+				</div>
 			)}
-			</>
-			)
-	
-		}
-		
-		export default App;
+		</>
+	);
+}
+
+export default App;

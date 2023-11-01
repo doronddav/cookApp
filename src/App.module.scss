@@ -1,17 +1,24 @@
 // #root {
 // }
 
-.NotForPhone{
+.NotForPhone {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	background-color: #fafafa;
-	.OnlyPhoneText{
+	.OnlyPhoneText {
 		margin-top: 4rem;
 	}
-.phonImg{
-	width: 50%;
-	height: 50%;
+	.phonImg {
+		width: 50%;
+		height: 50%;
+	}
 }
+
+.loader {
+	height: 27rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }

@@ -225,7 +225,9 @@ function AddRecipe({ recipes, isPopupVisible }) {
 			</div> */}
 
 			<div className={classes.addBtn}>
-				<button className={classes.btn}>Add Recipe</button>
+				<button className={`${classes.btn} ${classes.submitBTN}`}>
+					Add Recipe
+				</button>
 			</div>
 		</form>
 	);
